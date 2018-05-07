@@ -210,4 +210,12 @@ VBoxManage modifyvm "$ID_VM_VIRTUALBOX" --nicproperty<$NUMERO_NIC_VM_VIRTUALBOX_
 ```
 
 
+# TODOs
+
+## évolution code
+
+Le code de la recette a été modifié dans la docn, les mdoifications doivent être reportées sur le code lui-même, pour préparer la modularisation.
+BRef, colle les trucs de code propre de ce README.md dans les scripts bash, stp.
+
+
 
