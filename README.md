@@ -56,7 +56,11 @@ sudo vde_switch -s /tmp/switch1
 ```
 Ce qui donne:
 
-![Mon premier switch VDE](https://github.com/Jean-Baptiste-Lasselle/recette-deploiement-VDE/raw/master/doc/impr/mon-premier-switch-vde-SHELL-INTERACTIF-VDE-1.png)
+![Mon premier switch VDE, hung up](https://github.com/Jean-Baptiste-Lasselle/recette-deploiement-VDE/raw/master/doc/impr/mon-premier-switch-vde.png)
+
+Lorsque l'on a  exécuté `sudo vde_switch -s /tmp/switch1` le process reste en suspens, et si on presse une seule fois la touche entrée, on tombe dans le shell interactif "VDE switch CLI":
+
+![Mon premier switch VDE, entrée et passage au shell vde](https://github.com/Jean-Baptiste-Lasselle/recette-deploiement-VDE/raw/master/doc/impr/mon-premier-switch-vde-SHELL-INTERACTIF-VDE-1.png)
 
 
 ### Première Remarque
@@ -68,13 +72,16 @@ Puis, si l'on presse une seule fois la touche entrée, on entre dans une sorte d
 Dans ce shell interactif, on peut faire diférentes choses, comme:
 
 * Créer des VLAN et port VLAN cf. [Création d'un VLAN dans le switch VDE](#création-dun-vlan-dans-le-switch-vde)
-* Sortir du shell interactif, pour revenir à la session linux de l'jhôte de virutalisation (ubuntu en l'occurrence, masi j'ai vu qu'il y a des packages faits pour fedora, à voir le backport sur centos)
+* Sortir du shell interactif, pour revenir à la session linux de l'hôte de virutalisation (ubuntu en l'occurrence, masi j'ai vu qu'il y a des packages faits pour fedora, à voir le backport sur centos)
+
+![shutdown-vde](https://github.com/Jean-Baptiste-Lasselle/recette-deploiement-VDE/raw/master/doc/impr/mon-premier-switch-vde-SHELL-INTERACTIF-VDE-5-QLQ-COMMANDES-commande-pour-eteindre-un-switch-VDE.png)
+
 * exécuter toutes les commandes possibles, indiquées par l'aide:
   * aide vde dans le shell interactif `vde$`: (simplement taper la comande `help`). Première partie:
   
   ![Aide VDE, partie 1](https://github.com/Jean-Baptiste-Lasselle/recette-deploiement-VDE/raw/master/doc/impr/mon-premier-switch-vde-SHELL-INTERACTIF-VDE-6-vde-HELP1.png)
   
-  * aide vde dans le shell interactif `vde$`: (simplement taper la comande `help`). Première partie:
+  * aide vde dans le shell interactif `vde$`: (simplement taper la comande `help`). Seconde partie:
   
   ![Aide VDE, partie 2](https://github.com/Jean-Baptiste-Lasselle/recette-deploiement-VDE/raw/master/doc/impr/mon-premier-switch-vde-SHELL-INTERACTIF-VDE-6-vde-HELP2.png)
   
@@ -104,6 +111,10 @@ VBoxManage modifyvm "$ID_VM_VIRTUALBOX" --nicgenericdrv<$NUMERO_NIC_VM_VIRTUALBO
 VBoxManage modifyvm "$ID_VM_VIRTUALBOX" --nicproperty<$NUMERO_NIC_VM_VIRTUALBOX> network=/tmp/switch1
 
 ```
+
+Aucune impression écran fiate, le test doit être fait sur un hôte de virtualisation, pour être validé.
+
+
 ## Création d'un VLAN dans le switch VDE
 
 ```
@@ -149,26 +160,17 @@ VBoxManage modifyvm "$ID_VM_VIRTUALBOX" --nicproperty<$NUMERO_NIC_VM_VIRTUALBOX>
 
 ### Exemples d'exécution de commandes pour créer un VLAN
 * aide vde dans le shell interactif `vde$`: (simplement taper la comande `help`). Première partie:
-  ![Aide VDE, partie 1](https://github.com/Jean-Baptiste-Lasselle/recette-deploiement-VDE/raw/master/doc/impr/mon-premier-switch-vde-SHELL-INTERACTIF-VDE-6-vde-HELP1.png)
+  ![vue 1](https://github.com/Jean-Baptiste-Lasselle/recette-deploiement-VDE/raw/master/doc/impr/mon-premier-switch-vde-SHELL-INTERACTIF-VDE-2-QLQ-COMMANDES.png)
 * aide vde dans le shell interactif `vde$`: (simplement taper la comande `help`). Première partie:
-  ![Aide VDE, partie 2](https://github.com/Jean-Baptiste-Lasselle/recette-deploiement-VDE/raw/master/doc/impr/mon-premier-switch-vde-SHELL-INTERACTIF-VDE-6-vde-HELP2.png)
-* Exemple de commandes VDE trouvées dans la doc, sagement appliquées::
-  ![Aide VDE, partie 2](https://github.com/Jean-Baptiste-Lasselle/recette-deploiement-VDE/raw/master/doc/impr/mon-premier-switch-vde-SHELL-INTERACTIF-VDE-6-vde-HELP3-exemples.png)
-  
+  ![vue 2](https://github.com/Jean-Baptiste-Lasselle/recette-deploiement-VDE/raw/master/doc/impr/mon-premier-switch-vde-SHELL-INTERACTIF-VDE-3-QLQ-COMMANDES.png)
+
 ### Exemple de création de numéros de port pour ce VLAN:
 
-* Erreur intéresante:  . Première partie:
-  ![Aide VDE, partie 1](https://github.com/Jean-Baptiste-Lasselle/recette-deploiement-VDE/raw/master/doc/impr/mon-premier-switch-vde-SHELL-INTERACTIF-VDE-6-vde-HELP1.png)
-  
-   Est-elle due au fait que j'ai installé VDE dans une VM, au lieu d'un hôte de virtualisation valide? (dépend alors du hardware et de la solution de virutalisation, Type 1, Type 2, etc....)
-   Cela me paraîtrait très possible, car l'erreur mentionne une iùmpossibilité pour VDE, de trouver ce qu'il appelle un "device".
-   
-* ccc:
-  ![Aide VDE, partie 2](https://github.com/Jean-Baptiste-Lasselle/recette-deploiement-VDE/raw/master/doc/impr/mon-premier-switch-vde-SHELL-INTERACTIF-VDE-6-vde-HELP2.png)
-* ccc:
-  ![Aide VDE, partie 2](https://github.com/Jean-Baptiste-Lasselle/recette-deploiement-VDE/raw/master/doc/impr/mon-premier-switch-vde-SHELL-INTERACTIF-VDE-6-vde-HELP3-exemples.png)
-  
+* Erreur intéresante:
+  ![Erreur intéressante, numéro de port VLAN dans switch VDE, dans VM VirtualBox](https://github.com/Jean-Baptiste-Lasselle/recette-deploiement-VDE/raw/master/doc/impr/mon-premier-switch-vde-SHELL-INTERACTIF-VDE-4-QLQ-COMMANDES-on-voit-pb-creatrion-VLAN-DANS-VM-ubuntu.png)
 
+   blablablabla
+   
 
 ## Branchement des VMs à un VLAN créé dans le switch VDE
 
