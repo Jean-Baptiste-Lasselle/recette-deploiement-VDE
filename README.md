@@ -60,8 +60,16 @@ sudo vde_switch -s /tmp/switch1
 Lorsque la comande `sudo vde_switch -s /tmp/switch1`  est exécutée, le process de son exécution reste en suspens:
 
 Puis, si l'on presse une seule fois la touche entrée, on entre dans une sorte de chel interactif, dans lequel on peut faire diférentes choses, comme:
-* Créer des VLAN et port VLAN cf. [Création d'un VLAN dans le switch VDE](#creation-d-un-VLAN-dans-le-switch-VDE)
 
+* Créer des VLAN et port VLAN cf. [Création d'un VLAN dans le switch VDE](#création-dun-vlan-dans-le-switch-vde)
+* Sortir du shell interactif, pour revenir à la session linux de l'jhôte de virutalisation (ubuntu en l'occurrence, masi j'ai vu qu'il y a des packages faits pour fedora, à voir le backport sur centos)
+* exécuter toutes les commandes possibles, indiquées par l'aide:
+
+  * aide vde dans le shell interactif `vde$`: (simplement taper la comande `help`). Première partie:
+  ![Aide VDE, partie 1](#creation-d-un-VLAN-dans-le-switch-VDE)
+  * aide vde dans le shell interactif `vde$`: (simplement taper la comande `help`). Première partie:
+  ![Aide VDE, partie 2](#creation-d-un-VLAN-dans-le-switch-VDE)
+  
 ## Branchement des VMs au switch (donc au LAN)
  
 
