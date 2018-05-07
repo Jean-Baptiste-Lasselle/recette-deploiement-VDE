@@ -171,6 +171,12 @@ Aucune impression écran fiate, le test doit être fait sur un hôte de virtuali
 
    blablablabla
    
+* Création avec succès, en suivant les indications de `HELP`:
+
+  ![Création avec succès, en suivant les indications de l'aide VDE](https://github.com/Jean-Baptiste-Lasselle/recette-deploiement-VDE/raw/master/doc/impr/mon-premier-switch-vde-CREATION_VLAN_PORT_AVEC_NO_PORT_CHOISIT.png)
+
+   blablablabla
+   
 
 ## Branchement des VMs à un VLAN créé dans le switch VDE
 
