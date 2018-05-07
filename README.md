@@ -66,9 +66,11 @@ Puis, si l'on presse une seule fois la touche entrée, on entre dans une sorte d
 * exécuter toutes les commandes possibles, indiquées par l'aide:
 
   * aide vde dans le shell interactif `vde$`: (simplement taper la comande `help`). Première partie:
-  ![Aide VDE, partie 1](#creation-d-un-VLAN-dans-le-switch-VDE)
+  ![Aide VDE, partie 1](https://github.com/Jean-Baptiste-Lasselle/recette-deploiement-VDE/raw/master/doc/impr/mon-premier-switch-vde-SHELL-INTERACTIF-VDE-6-vde-HELP1.png)
   * aide vde dans le shell interactif `vde$`: (simplement taper la comande `help`). Première partie:
-  ![Aide VDE, partie 2](#creation-d-un-VLAN-dans-le-switch-VDE)
+  ![Aide VDE, partie 2](https://github.com/Jean-Baptiste-Lasselle/recette-deploiement-VDE/raw/master/doc/impr/mon-premier-switch-vde-SHELL-INTERACTIF-VDE-6-vde-HELP2.png)
+  * Exemple de commandes VDE trouvées dans la doc, sagement appliquées::
+  ![Aide VDE, partie 2](https://github.com/Jean-Baptiste-Lasselle/recette-deploiement-VDE/raw/master/doc/impr/mon-premier-switch-vde-SHELL-INTERACTIF-VDE-6-vde-HELP3-exemples.png)
   
 ## Branchement des VMs au switch (donc au LAN)
  
