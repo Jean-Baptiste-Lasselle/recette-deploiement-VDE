@@ -68,5 +68,4 @@ demander_QuelqueChose () {
 ##############################################################################################################################################
 # --------------------------------------------------------------------------------------------------------------------------------------------
 
-sudo apt-get install -y vde2
-sudo apt-get install -y umview umview-mod-umfuseiso9660 umview-mod-umfuseext2 umview-mod-umlwip umview-mod-umdevtap
+sudo apt-get install -y vde2 && sudo apt-get install -y umview umview-mod-umfuseiso9660 umview-mod-umfuseext2 umview-mod-umlwip umview-mod-umdevtap
