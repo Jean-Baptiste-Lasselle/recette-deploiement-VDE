@@ -289,3 +289,37 @@ Donc le wiki de docuementation officiel de VDE est publié par [l'université de
 Impression écran quelques essais sous Ubuntu pour effectuer une execution de commandes VDE saisies dans un fichier texte, i.e. un script:
 
 ![Essais Ubuntu pour effectuer une execution de commandes VDE saisies dans un fichier texte, un script](https://github.com/Jean-Baptiste-Lasselle/recette-deploiement-VDE/raw/master/doc/impr/mon-premier-switch-vde-SHELL-INTERACTIF-VDE-7-essais-exec-script-vde.png)
+
+
+## Première solution trouvée
+
+En faisant le tests suivants:
+
+![impression écran echo pipe process vde pour exécuter une commande envoyer sous forme de chaîne de caractères dans le pipe](ccc)
+
+```
+# env. opérations
+export NOMFICHIERLOG=exec.mon-premier-script.vde.log
+touch $NOMFICHIERLOG
+# Et donc l'idée serait d'employer uen technique de la forme:
+export FICHIER_SCRIPT_VDE=mon-premier-script.vde
+# un VLAN que l'on va créer, avec un nuémro de port VLAN
+export NUMERO_ID_VLAN=37
+export NUMERO_ID_VLAN_PORT1=2
+touch $FICHIER_SCRIPT_VDE
+echo "showinfo" >> FICHIER_SCRIPT_VDE
+echo "vlan/create $NUMERO_ID_VLAN" >> FICHIER_SCRIPT_VDE
+echo "port/setvlan $NUMERO_ID_VLAN_PORT1 $NUMERO_ID_VLAN" >> FICHIER_SCRIPT_VDE
+echo "contenu fichier [$FICHIER_SCRIPT_VDE]" :
+cat $FICHIER_SCRIPT_VDE
+# pour compter les instructions exécutées, pour les logs des opérations.
+export COMPTEURTEMP=1
+while read instruction; do
+  echo "$instruction" >> $NOMFICHIERLOG
+  echo "$instruction" |sudo vde_switch -s /tmp/switch1
+  echo "# exécution de l'ionstruction no.[$COMPTEURTEMP] :  [$instruction]"
+  ((COMPTEURTEMP=COMPTEURTEMP+1))
+done <$FICHIER_SCRIPT_VDE
+```
+
+
