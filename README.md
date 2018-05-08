@@ -453,7 +453,7 @@ Then I found a bit more about NixOS, and happenend to read:
 DevOps-friendly
 
 [...]
- 
+
 NixOps, the NixOS cloud deployment tool, allows you to provision and manage networks of 
 NixOS machines in environments like Amazon EC2 and VirtualBox.
  
@@ -479,5 +479,5 @@ P.S.:
 
 Maybe a word about what I am here doing.
 
-I have recently found a very interesting and valuable business use case for those kind of hybrid virtualization paradigms concepts you're working on, I will 
+I have recently found a very interesting and valuable business use case for those kind of hybrid virtualization paradigms / concepts you're working on, I will 
 be glad to keep you informed on the matter.
