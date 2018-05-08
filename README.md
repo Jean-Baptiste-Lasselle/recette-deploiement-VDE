@@ -310,8 +310,8 @@ Une solution possible pour pouvoir appliquer le principe infrastructure as code 
 export NOMFICHIERLOG=exec.mon-premier-script.vde.log
 touch $NOMFICHIERLOG
 # Et donc l'idée serait d'employer uen technique de la forme:
-export CHEMIN_SGF_SWITCH_VDE1=/tmp/switch1
-export CHEMIN_SGF_SWITCH_VDE1=/tmp/switch2
+export CHEMIN_SGF_SOCKET_SWITCH_VDE1=/tmp/switch1
+export CHEMIN_SGF_SOCKET_SWITCH_VDE2=/tmp/switch2
 export FICHIER_SCRIPT_VDE=mon-premier-script.vde
 # un VLAN que l'on va créer, avec un nuémro de port VLAN
 export NUMERO_ID_VLAN=37
@@ -326,10 +326,51 @@ cat $FICHIER_SCRIPT_VDE
 export COMPTEURTEMP=1
 while read instruction; do
   echo "$instruction" >> $NOMFICHIERLOG
-  echo "$instruction" |sudo vde_switch -s /tmp/switch1
+  echo "$instruction" |sudo vde_switch -s $CHEMIN_SGF_SOCKET_SWITCH_VDE1
   echo "# exécution de l'ionstruction no.[$COMPTEURTEMP] :  [$instruction]"
   ((COMPTEURTEMP=COMPTEURTEMP+1))
 done <$FICHIER_SCRIPT_VDE
 ```
 
 
+Aide GNU imprimée sur stdout, pour l'exécutable `vde_switch`:
+
+```
+lauriane@lauriane-vm:~$ vde_switch --help
+Usage: vde_switch [OPTIONS]
+Runs a VDE switch.
+(global opts)
+  -h, --help                 Display this help and exit
+  -v, --version              Display informations on version and exit
+  -n  --numports             Number of ports (default 32)
+  -x, --hub                  Make the switch act as a hub
+  -F, --fstp                 Activate the fast spanning tree protocol
+      --macaddr MAC          Set the Switch MAC address
+      --priority N           Set the priority for FST (MAC extension)
+      --hashsize N           Hash table size
+(opts from datasock module)
+  -s, --sock SOCK            control directory pathname
+  -s, --vdesock SOCK         Same as --sock SOCK
+  -s, --unix SOCK            Same as --sock SOCK
+  -m, --mode MODE            Permissions for the control socket (octal)
+      --dirmode MODE         Permissions for the sockets directory (octal)
+  -g, --group GROUP          Group owner for comm sockets
+(opts from consmgmt module)
+  -d, --daemon               Daemonize vde_switch once run
+  -p, --pidfile PIDFILE      Write pid of daemon to PIDFILE
+  -f, --rcfile               Configuration file (overrides /etc/vde2/vde_switch.rc and ~/.vderc)
+  -M, --mgmt SOCK            path of the management UNIX socket
+      --mgmtmode MODE        management UNIX socket access mode (octal)
+      --mgmtgroup GROUP      management UNIX socket group name
+  -D, --debugclients #       number of debug clients allowed
+(opts from tuntap module)
+  -t, --tap TAP              Enable routing through TAP tap interface
+
+Report bugs to info@v2.cs.unibo.it
+```
+
+Lancement d'un switch VDE en tant que process en tâche de fond (daemon), plutôt à définir commme un service, comme docker:
+
+![Lancement switch VDE daemon]()
+
+Question: une fois le switch lancé, comme fait-on pour exécuter 'autres comandes à 'intérieur ? (pour le re-configurer à chaud....)
