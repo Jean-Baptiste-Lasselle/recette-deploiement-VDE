@@ -430,7 +430,7 @@ Voir si je peux faire du opendaylight avec kubernetes, et sans aucune machine vi
 ## Question to Professor Davoli
 
 Hello Professor Davoli, thank you very much for reading this paragrpah, which is meant to ask you a question 
-I hope in a proper format, and easy to read format.
+I hope in a proper and easy to read format.
 
 I am working on being able to provision a network (whatever its technical natiure is), which:
 * would have virutalbox Virtual Machines as bnetwork hosts on different physical virtualbox hosts.
