@@ -280,3 +280,12 @@ Les conteneurs Windows (les retourver dans le .NET framewworks, ils vont appara�
 [Une partie de docuementation officielle VDE, université de Bologne](http://wiki.v2.cs.unibo.it/wiki/index.php?title=VDE#Switch_management_in_detail)
 
 Donc le wiki de docuementation officiel de VDE est publié par [l'université de Bologne](http://www.unibo.it/it), et vous pouvez en trouver une [sauvegarde sur ce repo](https://github.com/Jean-Baptiste-Lasselle/recette-deploiement-VDE/raw/master/doc/vde/vde-switch-management-documentation.pdf)
+
+
+# Tests faits pour essayer d'exécuter des commandes VDE sous forme de scripts
+
+(pour appliquer Infrastructure as code)
+
+Impression écran quelques essais sous Ubuntu pour effectuer une execution de commandes VDE saisies dans un fichier texte, un script:
+
+[Essais Ubuntu pour effectuer une execution de commandes VDE saisies dans un fichier texte, un script](ccc)
