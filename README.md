@@ -400,5 +400,5 @@ NixOS machines in environments like Amazon EC2 and VirtualBox.
  
 ``` 
 
-[Page accueil Site Oueb Officiel NixOS](https://github.com/NixOS/nixpkgs/issues/32453)
+[Page accueil Site Oueb Officiel NixOS](https://github.com/Jean-Baptiste-Lasselle/recette-deploiement-VDE/raw/master/doc/impr/NixOS/page-accueil-site-oueb-NixOS.png)
 
