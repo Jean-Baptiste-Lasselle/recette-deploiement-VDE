@@ -264,6 +264,12 @@ Et je peux forcément packager un Ubuntu qui sera capable d'exécutr VDE et VRit
 
 ![Accès réseau et SGF avec Ubuntu 100%en RAM](https://github.com/Jean-Baptiste-Lasselle/recette-deploiement-VDE/raw/master/doc/impr/keytes-green-grid/vm-ubuntu-100-pourcent-RAM.png)
 
+### MAis en fait
+
+dans un hôte de virtualisation à 100% en RAM, je peux tout virtualiser lopcalement, sauf les devices de persistance.... Non?
+
+<!-- ...il y a des choses à voir, c'est sûr, dans les différents hybrides de virtualisation, selon cas d'utilsiation..... -->
+
 ## Conteneurs natif
 Les conteneurs Windows (les retourver dans le .NET framewworks, ils vont apparaître, et avec le PowerShell, puis ansible et chef.io)
  et Heroku peuvent donner des renfort de 2 périmètres réseaux différents.
