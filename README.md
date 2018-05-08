@@ -461,12 +461,13 @@ NixOS machines in environments like Amazon EC2 and VirtualBox.
  
 ``` 
 
-Here are 4 accurate questions:
+Here are 5 accurate questions:
 
 * Do you confirm NixOS would allow to provision L2 isolated networks of WirtualBox VMs?
 * I heard you are working on `VXVDE`, as a replacement for `VDE`. This work of yours is going towards VXLANs, very much like in many other IAAS virtualisation projects (VXLANs everywhere in Openstack / Opendaylight / Kubernetes / FlannelD...), am I right?
 * Can I today use VXVDE to provision VXLAN networks between network hosts that are virtualbox VMs, on different hardware host? If yes, any link to a tutorial/documentation you would advise me to start with?
 * Did you know about your VDE being distributed with that Linux distribution's releases, namely `NixOS`?
+* Is your new VXVDE being distributed with `NixOS` current releases?
 
 
 Thank you very much in advance, and thank you very much for your work,
