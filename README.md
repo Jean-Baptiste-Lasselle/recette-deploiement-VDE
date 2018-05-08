@@ -443,7 +443,7 @@ As you can see below, I have conducted a series of tests, to test VDE switchesda
 One of my concerns, was to be able to execute VDE commands from a text file (a script):
 Of course intention to be able to apply Infrastructure As Code principle to all VDE involved provisioning recipes.
 
-After a [funny stupid try](https://github.com/Jean-Baptiste-Lasselle/recette-deploiement-VDE#premi%C3%A8re-solution-trouv%C3%A9e) with  a for loop, I searched deeper on the web.
+After a [funny stupid try with a while loop](https://github.com/Jean-Baptiste-Lasselle/recette-deploiement-VDE#premi%C3%A8re-solution-trouv%C3%A9e), I searched deeper on the web.
 
 While searching on the problem, I found [one issue in NixOS official and public issue management](https://github.com/NixOS/nixpkgs/issues/32453) :
 ![entrée issue management NixOS](https://github.com/Jean-Baptiste-Lasselle/recette-deploiement-VDE/raw/master/doc/impr/NixOS/issue-github-NixOS-enchercahnt-solution-executer-script-VDE.png)
@@ -452,7 +452,6 @@ Then I found a bit more about NixOS, and happenend to read:
 
 
 ```
-
 DevOps-friendly
 
 [...]
