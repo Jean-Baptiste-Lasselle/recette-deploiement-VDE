@@ -226,7 +226,7 @@ Le code de la recette a été modifié dans la docn, les mdoifications doivent �
 Bref, colle les trucs de code propre de ce README.md dans les scripts bash, stp.
 
 
-# ANNEXE: Kytes-green
+# ANNEXE: kytes-green-grid
 
 
 L'idée est d'un point du vue général, d'essayer de tirer le maximum du hardware présent, y compris en propsoant l'idée à des collègues qui ne
