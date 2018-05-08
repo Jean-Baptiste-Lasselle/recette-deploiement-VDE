@@ -402,6 +402,28 @@ NixOS machines in environments like Amazon EC2 and VirtualBox.
 ``` 
 
 Donc on confirme: NixOS permetttrait de réaliser de la gestion de réseaux entre machines virtualbox. 
-La question est de vérifier s'il le font au niveau de la couche L2 avec la virutalisation de switch, ce qui expliquerait pourquoi les packages virtualsquare incluant `vde_switch`, sont présents dans la distribution NixOS
+La question est de vérifier s'il le font au niveau de la couche L2 avec la virutalisation de switch, ce qui expliquerait pourquoi les packages virtualsquare incluant `vde_switch`, sont présents dans la distribution NixOS.
+
 ![Page accueil Site Oueb Officiel NixOS](https://github.com/Jean-Baptiste-Lasselle/recette-deploiement-VDE/raw/master/doc/impr/NixOS/page-accueil-site-oueb-NixOS.png)
+
+
+Renzo Davoli, le professeur de l'université de bologne, créateur auteur de VDE, est en train (a peut -être déjà terminé/amené à maturité), de 
+créer le successeur de VDE: VXVDE.
+
+[Page personnelle de Renzo Davoli, auteur de VDE](http://www.cs.unibo.it/~renzo/)
+
+Donc lui aussi va vers les VXLANs, au lieu de continuer de proposer de faire des VLANs avec VDE.
+Clairement, il offre la possibilité de faire des VLAN avec VDE, VXVDE permetra de faire la même chose, mais avec des VXLANs, avec notion de underlay/overlay networks.
+Dans son cas à lui, ça signoifierait passer de 2 couches 1 physique underlay, 1 virtuelle overlay, à N couches, de la virtualisation, sur la virutalisation.
+
+Comme pour les switch VDE pour lesquels on auraiut furieusement envie de les coller dans des conteneurs docker, On se posera la question 
+de savoir si on pourra coller des switch VXVDE dans des conteneurs Docker.
+
+Deux cas principaux de comparaison:
+
+Underlay / Overlay networks avec FlannelD / Kubernetes
+Underlay / Overlay networks avec Openstack + OpenDaylight
+Voir si je peux faire du opendaylight avec kubernetes, et sans aucune machine virtuelle, juste le provider de conteneur OCI.
+
+
 
