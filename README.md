@@ -159,14 +159,16 @@ Aucune impression écran fiate, le test doit être fait sur un hôte de virtuali
 
 
 ### Exemples d'exécution de commandes pour créer un VLAN
-* aide vde dans le shell interactif `vde$`: (simplement taper la comande `help`). Première partie:
+
+* aide vde dans le shell interactif `vde$`: (simplement taper la comande `help`) - Première partie:
   ![vue 1](https://github.com/Jean-Baptiste-Lasselle/recette-deploiement-VDE/raw/master/doc/impr/mon-premier-switch-vde-SHELL-INTERACTIF-VDE-2-QLQ-COMMANDES.png)
-* aide vde dans le shell interactif `vde$`: (simplement taper la comande `help`). Première partie:
+* aide vde dans le shell interactif `vde$`: (simplement taper la comande `help`) - Seconde partie:
   ![vue 2](https://github.com/Jean-Baptiste-Lasselle/recette-deploiement-VDE/raw/master/doc/impr/mon-premier-switch-vde-SHELL-INTERACTIF-VDE-3-QLQ-COMMANDES.png)
 
 ### Exemple de création de numéros de port pour ce VLAN:
 
 * Erreur intéresante:
+
   ![Erreur intéressante, numéro de port VLAN dans switch VDE, dans VM VirtualBox](https://github.com/Jean-Baptiste-Lasselle/recette-deploiement-VDE/raw/master/doc/impr/mon-premier-switch-vde-SHELL-INTERACTIF-VDE-4-QLQ-COMMANDES-on-voit-pb-creatrion-VLAN-DANS-VM-ubuntu.png)
 
    blablablabla
