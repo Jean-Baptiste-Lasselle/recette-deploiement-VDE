@@ -436,7 +436,7 @@ I am working on being able to provision a network (whatever its technical natiur
 * would have virutalbox Virtual Machines as bnetwork hosts on different physical virtualbox hosts.
 * I have found out about your solution, `VDE` mentionned in official [VirutalBox "Networking guide"]()
 * network will provide Layer 2 separation: what I want to do have, is a network isolated enough from the other, so that I can PXE boot machines broadcasting their UUID/MAC ADRESSES on Power ON, without
-  interfering at all with any other network hosts. By "without interfering at all with any other network hosts", I mean for example, taht the DHCP server I spawn to realize PXE booting, will not even act as a simple DHCP server for any network host in a different network.
+  interfering at all with any other network hosts. By "without interfering at all with any other network hosts", I mean for example, that the DHCP server I spawn to realize PXE booting, will not even act as a simple DHCP server for any network host in a different network.
   
 As you can see below, I have conducted a series of tests, to test VDE switchesday-to-day use.
 
