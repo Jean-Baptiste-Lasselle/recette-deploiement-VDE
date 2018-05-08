@@ -477,7 +477,7 @@ Jean-Baptiste Lasselle
 
 P.S.:
 
-Maybe a word about what I am here doing:
+Maybe a word about what I am here doing.
 
 I have recently found a very interesting and valuable business use case for those kind of hybrid virtualization paradigms concepts you're working on, I will 
 be glad to keep you informed on the matter.
