@@ -407,7 +407,15 @@ La question est de vérifier s'il le font au niveau de la couche L2 avec la viru
 ![Page accueil Site Oueb Officiel NixOS](https://github.com/Jean-Baptiste-Lasselle/recette-deploiement-VDE/raw/master/doc/impr/NixOS/page-accueil-site-oueb-NixOS.png)
 
 
+### Autre référene: l'outil de provisioning `Nixops`:
 
+https://nixos.org/nixops/manual/
+
+À cette page, on peut lire la documentation montrant comment provisionner des machines virtuelles NixOS, avec une confgiuration réseau.
+
+Il est à vérifier dans cette docuementation si je peux traiter la connection entre deux machines virtuelles via un réseau isolé layer 2.
+
+## VDE / VXVDE
 Renzo Davoli, le professeur de l'université de bologne, créateur auteur de VDE, est en train (a peut -être déjà terminé/amené à maturité), de 
 créer le successeur de VDE: VXVDE.
 
@@ -493,3 +501,10 @@ be glad to keep you informed on the matter.
 Technical details involve using a VirutalBox "Internal Network" (network type which has layer 2 isolation), dedicated to manage 
 provisioning & adminsitration of an infrastructure sitting upon VirtualBOx Virtual Machines, distributed on different hardware nodes.
 Each hardware node has a virutalbox installation, with OAuth2 server API setup.
+
+P.P.S.:
+
+Screenshots of a Renzo Davoli Conference about VDE/VXDE - 2017:
+
+![Screenshot of a Renzo Davoli Conference about VDE - 2017](https://github.com/Jean-Baptiste-Lasselle/recette-deploiement-VDE/raw/master/doc/impr/conference-renzo-davoli-vde-vxvde-vdeplug.png)
+![Screenshot of a Renzo Davoli Conference about VDE - 2017](https://github.com/Jean-Baptiste-Lasselle/recette-deploiement-VDE/raw/master/doc/impr/conference-renzo-davoli-vde-vxvde-vdeplug-2.png)
