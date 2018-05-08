@@ -463,7 +463,7 @@ Here are 4 accurate questions:
 
 * Do you confirm NixOS would allow to provision L2 isolated networks of WirtualBox VMs?
 * I heard you are working on `VXVDE`, as a replacement for `VDE`. This work of yours is going towards VXLANs, very much like in many other IAAS virtualisation projects (VXLANs everywhere in Openstack / Opendaylight / Kubernetes / FlannelD...), am I right?
-* Can I today use VXVDE to provision VXLAN networks between network hosts that are virtualbox VMs, on different hardware host? If yes, any link to a tutorial?
+* Can I today use VXVDE to provision VXLAN networks between network hosts that are virtualbox VMs, on different hardware host? If yes, any link to a tutorial/documentation you would advise me to start with?
 * Did you know about your VDE being distributed with that Linux distribution's releases, namely `NixOS`?
 
 
