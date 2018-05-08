@@ -233,8 +233,9 @@ L'idée est d'un point du vue général, d'essayer de tirer le maximum du hardwa
 travaillent pas sur le même sujet, dans une même entreprise.
 
 "
-À midi, quand tu fermes to n pc, tu le switch en mode Kytes,ce qui est donner ton autorisation à l'instance Kytes d'exploiter ta machine.
+À midi, quand tu fermes ton pc, tu le switch en mode `kytes-green-grid-node`, ce qui reviens à donner ton autorisation à l'instance Kytes d'exploiter ta machine. Tudonnes cette autorisation impliciatement, en utilsiant l'application que je t'ai donnée sur ton téléphone portable, ou depuis ton poste lui-même.
 "
+L'appli mobile appelle un backend kytes, qui appelle l'agent installé sur le poste de la personne, etc...
 
 Et pendant que tout le monde mange, les builds se font plus puissamment.
 
@@ -249,6 +250,19 @@ Mais au contraire de faire tourner l'OS entièrement en RAM, avec le serveur RES
 Et la persistance des VM et des snapshots de VM, se fait par le réseau, le restore se fait par le réseau, et la VM est chargée dans un SGF entièrement en RAM (qui lui -même est sauvegardé /restauré) par le réseau.
 
 On fait juste du compute à cet endroit, et les résultats partent là où ils  doivent partir dans l'usine logicielle, pour leur persistance.
+
+### Exemple: Accès réseau et SGF avec Ubuntu 100%en RAM
+
+à l'installation d'un ubuntu "desktop", on a deux options, "install Ubuntu", ou "Try Ubunutu". CEtte deuxième option permet d'exécuter Ubuntu à 100% dans la RAM, en utilsiant un utilisateur spécifique, dit "guest".
+Dans ce mode, et avec cet utilisateur, il n'est pas possible d'apporter le moindre changement au SGF dans la RAM.
+Mais dans ce mode, on peut sans aucun problème accéder à Internet avec Mozilla:
+Donc cette instance de mozilla (à vérifier) , modifie bel et bien le SGF en RAM:
+TEST ==>> pour le vérifier, lje peux me connecter à la mon compte GMAIL, et avec firefox, faire "se souvenir de mon mot de passe", et consulter avec bash, en lecture seule, le SGF en RAM pour véirifier si des fichiers cookies on été créés etc...
+
+SI c'eszt le cas, mozila utilsie certainement un autre utilsiateur linux que l'utilsiateur guest, pour faire ces modificatiuons de SGF à 100% en RAM.
+Et je peux forcément packager un Ubuntu qui sera capable d'exécutr VDE et VRitualBOX en ne modifiant que le SGF en RAM, rien de plus que Mozilla Firefox.)
+
+![Accès réseau et SGF avec Ubuntu 100%en RAM](https://github.com/Jean-Baptiste-Lasselle/recette-deploiement-VDE/raw/master/doc/impr/keytes-green-grid/vm-ubuntu-100-pourcent-RAM.png)
 
 ## Conteneurs natif
 Les conteneurs Windows (les retourver dans le .NET framewworks, ils vont apparaître, et avec le PowerShell, puis ansible et chef.io)
