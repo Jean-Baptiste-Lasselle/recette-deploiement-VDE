@@ -288,4 +288,4 @@ Donc le wiki de docuementation officiel de VDE est publié par [l'université de
 
 Impression écran quelques essais sous Ubuntu pour effectuer une execution de commandes VDE saisies dans un fichier texte, un script:
 
-[Essais Ubuntu pour effectuer une execution de commandes VDE saisies dans un fichier texte, un script](ccc)
+[Essais Ubuntu pour effectuer une execution de commandes VDE saisies dans un fichier texte, un script](https://github.com/Jean-Baptiste-Lasselle/recette-deploiement-VDE/raw/master/doc/impr/mon-premier-switch-vde-SHELL-INTERACTIF-VDE-7-essais-exec-script-vde.png)
