@@ -301,8 +301,8 @@ En faisant les tests suivants:
 J'ai réussit àç exécuter les instructions VDE `showinfo` et `vlan/create` sans entrer dans le process VDE restera à déterminer si en mode d'exécution en tant que service.... (peut-on coller out ça dans un conteneur Docker?)
 
 
-Une solution possible pour pouvoir appliquer le principe infrastrucuture as code aux switchs VDE, serait:
-
+Une solution possible pour pouvoir appliquer le principe infrastructure as code aux switchs VDE, serait:
+--> cette solution présente un problème, je pense qu'entre 2 exécution vde de la boucle `for`, l'effet des commandes ne persiste pas.
 
 
 ```
@@ -310,6 +310,8 @@ Une solution possible pour pouvoir appliquer le principe infrastrucuture as code
 export NOMFICHIERLOG=exec.mon-premier-script.vde.log
 touch $NOMFICHIERLOG
 # Et donc l'idée serait d'employer uen technique de la forme:
+export CHEMIN_SGF_SWITCH_VDE1=/tmp/switch1
+export CHEMIN_SGF_SWITCH_VDE1=/tmp/switch2
 export FICHIER_SCRIPT_VDE=mon-premier-script.vde
 # un VLAN que l'on va créer, avec un nuémro de port VLAN
 export NUMERO_ID_VLAN=37
