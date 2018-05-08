@@ -173,11 +173,11 @@ Aucune impression écran fiate, le test doit être fait sur un hôte de virtuali
 
    blablablabla
    
-* Création avec succès, en suivant les indications de `HELP`:
+* Création avec succès, d'un port VLAN avec un numéro de port spécifique en suivant les indications de `HELP`:
 
   ![Création avec succès, en suivant les indications de l'aide VDE](https://github.com/Jean-Baptiste-Lasselle/recette-deploiement-VDE/raw/master/doc/impr/mon-premier-switch-vde-CREATION_VLAN_PORT_AVEC_NO_PORT_CHOISIT.png)
 
-   blablablabla
+   Il faudra refaire le test pour exécuter ensuite `vlan/printall` pour voir l'affichage de toutes les infos de tous les VLAN définis (donc sur le VLAN `33`, on devrait voir un port de numéro `2`)
    
 
 ## Branchement des VMs à un VLAN créé dans le switch VDE
