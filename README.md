@@ -384,6 +384,7 @@ Je copie coole donc le message d'erreur, pour trouver des fils de discussions de
 Le premier résultat Google que je trouve en relation avec le sujet, est:
 
 [entrée issue management NixOS](https://github.com/NixOS/nixpkgs/issues/32453)
+![entrée issue management NixOS](https://github.com/Jean-Baptiste-Lasselle/recette-deploiement-VDE/raw/master/doc/impr/NixOS/issue-github-NixOS-enchercahnt-solution-executer-script-VDE.png)
 
 Là, je cherche quel est le projet dans lequel est remonté cette "issue" Github, et je tombe sur le projet "[NixOS](https://nixos.org/)":
 
@@ -400,5 +401,7 @@ NixOS machines in environments like Amazon EC2 and VirtualBox.
  
 ``` 
 
-[Page accueil Site Oueb Officiel NixOS](https://github.com/Jean-Baptiste-Lasselle/recette-deploiement-VDE/raw/master/doc/impr/NixOS/page-accueil-site-oueb-NixOS.png)
+Donc on confirme: NixOS permetttrait de réaliser de la gestion de réseaux entre machines virtualbox. 
+La question est de vérifier s'il le font au niveau de la couche L2 avec la virutalisation de switch, ce qui expliquerait pourquoi les packages virtualsquare incluant `vde_switch`, sont présents dans la distribution NixOS
+![Page accueil Site Oueb Officiel NixOS](https://github.com/Jean-Baptiste-Lasselle/recette-deploiement-VDE/raw/master/doc/impr/NixOS/page-accueil-site-oueb-NixOS.png)
 
