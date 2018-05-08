@@ -293,9 +293,17 @@ Impression écran quelques essais sous Ubuntu pour effectuer une execution de co
 
 ## Première solution trouvée
 
-En faisant le tests suivants:
+En faisant les tests suivants:
 
-![impression écran echo pipe process vde pour exécuter une commande envoyer sous forme de chaîne de caractères dans le pipe](ccc)
+![impression écran echo pipe process vde pour exécuter une commande envoyer sous forme de chaîne de caractères dans le pipe](https://github.com/Jean-Baptiste-Lasselle/recette-deploiement-VDE/raw/master/doc/impr/mon-premier-switch-vde-SHELL-INTERACTIF-VDE-_-essais-exec-script-vde.png)
+
+
+J'ai réussit àç exécuter les instructions VDE `showinfo` et `vlan/create` sans entrer dans le process VDE restera à déterminer si en mode d'exécution en tant que service.... (peut-on coller out ça dans un conteneur Docker?)
+
+
+Une solution possible pour pouvoir appliquer le principe infrastrucuture as code aux switchs VDE, serait:
+
+
 
 ```
 # env. opérations
