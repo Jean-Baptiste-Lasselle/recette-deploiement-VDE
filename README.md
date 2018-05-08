@@ -223,7 +223,35 @@ VBoxManage modifyvm "$ID_VM_VIRTUALBOX" --nicproperty<$NUMERO_NIC_VM_VIRTUALBOX_
 ## évolution code
 
 Le code de la recette a été modifié dans la docn, les mdoifications doivent être reportées sur le code lui-même, pour préparer la modularisation.
-BRef, colle les trucs de code propre de ce README.md dans les scripts bash, stp.
+Bref, colle les trucs de code propre de ce README.md dans les scripts bash, stp.
 
+
+# ANNEXE: Kytes-green
+
+
+L'idée est d'un point du vue général, d'essayer de tirer le maximum du hardware présent, y compris en propsoant l'idée à des collègues qui ne
+travaillent pas sur le même sujet, dans une même entreprise.
+
+"
+À midi, quand tu fermes to n pc, tu le switch en mode Kytes,ce qui est donner ton autorisation à l'instance Kytes d'exploiter ta machine.
+"
+
+Et pendant que tout le monde mange, les builds se font plus puissamment.
+
+
+## OS sans disque dur
+Puisque l'installation de l'OS sur les postes d'une entreprise  tierce peut-être compliquée à gérer en opérations, l'idéeest de se ddemander si 'lon peut faire la même chiose, en restant dans la RAM, sans jamais utiliser le disque dur?
+Si entiuèrement dans la RAM, je peux faire tourner VDE et virutalbox et faire qu'ils utilsient un sysst-ème de fichiers entièrement dans la RAM, et qu'en plus l'hôte virutalbox 100% dans la RAM, puisse accéder au réseau, c'est bon
+je peux faire l'exploitation du noeud kytes sans jamais tocuher au disque dur, jeuste à développer un pre execution  boot environnement, qui permet de swwitch en mode DHCP partiulier, avec un instrallateur anaconda customisé qui fait une installation 100% en RAM de lma distribution mlinux contenant VDE et virutalBOx.
+
+Donc l'idée serait de ne jamais installer le linux dans lequel j'installe virtualbox et VDE
+Mais au contraire de faire tourner l'OS entièrement en RAM, avec le serveur REST api virtual Box (comment configurer son authentification SAML Oauth2 ?)
+Et la persistance des VM et des snapshots de VM, se fait par le réseau, le restore se fait par le réseau, et la VM est chargée dans un SGF entièrement en RAM (qui lui -même est sauvegardé /restauré) par le réseau.
+
+On fait juste du compute à cet endroit, et les résultats partent là où ils  doivent partir dans l'usine logicielle, pour leur persistance.
+
+## Conteneurs natif
+Les conteneurs Windows (les retourver dans le .NET framewworks, ils vont apparaître, et avec le PowerShell, puis ansible et chef.io)
+ et Heroku peuvent donner des renfort de 2 périmètres réseaux différents.
 
 
