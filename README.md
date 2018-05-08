@@ -257,9 +257,9 @@ On fait juste du compute à cet endroit, et les résultats partent là où ils  
 Dans ce mode, et avec cet utilisateur, il n'est pas possible d'apporter le moindre changement au SGF dans la RAM.
 Mais dans ce mode, on peut sans aucun problème accéder à Internet avec Mozilla:
 Donc cette instance de mozilla (à vérifier) , modifie bel et bien le SGF en RAM:
-TEST ==>> pour le vérifier, lje peux me connecter à la mon compte GMAIL, et avec firefox, faire "se souvenir de mon mot de passe", et consulter avec bash, en lecture seule, le SGF en RAM pour véirifier si des fichiers cookies on été créés etc...
+TEST ==>> pour le vérifier, je peux me connecter à la mon compte GMAIL, et avec firefox, faire "se souvenir de mon mot de passe", et consulter avec bash, en lecture seule, le SGF en RAM pour véirifier si des fichiers cookies on été créés etc...
 
-SI c'eszt le cas, mozila utilsie certainement un autre utilsiateur linux que l'utilsiateur guest, pour faire ces modificatiuons de SGF à 100% en RAM.
+SI c'est le cas, mozilla firefox utilise certainement un autre utilisateur linux que l'utilisateur guest, pour faire ces modifications de SGF à 100% en RAM.
 Et je peux forcément packager un Ubuntu qui sera capable d'exécutr VDE et VRitualBOX en ne modifiant que le SGF en RAM, rien de plus que Mozilla Firefox.)
 
 ![Accès réseau et SGF avec Ubuntu 100%en RAM](https://github.com/Jean-Baptiste-Lasselle/recette-deploiement-VDE/raw/master/doc/impr/keytes-green-grid/vm-ubuntu-100-pourcent-RAM.png)
