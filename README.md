@@ -264,7 +264,7 @@ Et je peux forcément packager un Ubuntu qui sera capable d'exécutr VDE et VRit
 
 ![Accès réseau et SGF avec Ubuntu 100%en RAM](https://github.com/Jean-Baptiste-Lasselle/recette-deploiement-VDE/raw/master/doc/impr/keytes-green-grid/vm-ubuntu-100-pourcent-RAM.png)
 
-### MAis en fait
+### Mais en fait
 
 dans un hôte de virtualisation à 100% en RAM, je peux tout virtualiser lopcalement, sauf les devices de persistance.... Non?
 
@@ -275,3 +275,8 @@ Les conteneurs Windows (les retourver dans le .NET framewworks, ils vont appara�
  et Heroku peuvent donner des renfort de 2 périmètres réseaux différents.
 
 
+# Biblio
+
+[Une partie de docuementation officielle VDE, université de Bologne](http://wiki.v2.cs.unibo.it/wiki/index.php?title=VDE#Switch_management_in_detail)
+
+Donc le wikide docuementation est publié par [l'université de Bologne](http://www.unibo.it/it)
