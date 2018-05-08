@@ -470,7 +470,8 @@ Here are 5 accurate questions:
 * Is your new VXVDE being distributed with `NixOS` current releases?
 
 
-Thank you very much in advance, and thank you very much for your work,
+Thank you very much in advance, and thank you very much for your work, 
+And my sincere apology for terms and concepts I might have treated as potatoes in a bag, here.
 
 
 Best Regards,
