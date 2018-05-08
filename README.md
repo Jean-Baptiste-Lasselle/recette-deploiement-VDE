@@ -488,3 +488,7 @@ Maybe a word about what I am here doing.
 
 I have recently found a very interesting and valuable business use case for those kind of hybrid virtualization paradigms / concepts you're working on, I will 
 be glad to keep you informed on the matter.
+
+Technical details involve using a VirutalBox "Internal Network" (network type which has layer 2 isolation), dedicated to manage 
+provisioning & adminsitration of an infrastructure sitting upon VirtualBOx Virtual Machines, distributed on different hardware nodes.
+Each hardware node has a virutalbox installation, with OAuth2 server API setup.
