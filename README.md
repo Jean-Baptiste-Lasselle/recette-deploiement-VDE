@@ -374,3 +374,31 @@ Lancement d'un switch VDE en tant que process en tâche de fond (daemon), plutô
 ![Lancement switch VDE daemon]()
 
 Question: une fois le switch lancé, comme fait-on pour exécuter 'autres comandes à 'intérieur ? (pour le re-configurer à chaud....)
+
+
+
+## NixOS: En googlelisant  l'erreur `vde_switch: EOF on stdin, cleaning up and exiting`
+
+Je copie coole donc le message d'erreur, pour trouver des fils de discussions de personnes ayant rencontré le même problème avec VDE Switch.
+
+Le premier résultat Google que je trouve en relation avec le sujet, est:
+
+[entrée issue management NixOS](https://github.com/NixOS/nixpkgs/issues/32453)
+
+Là, je cherche quel est le projet dans lequel est remonté cette "issue" Github, et je tombe sur le projet "[NixOS](https://nixos.org/)":
+
+* Ce projet est présenté dcomme un projet d'OS "devops Friendly", avec de l'outil devops pour les sprovisions de machiens, apparrement.
+* Et ce projet ets présenté aussi comme permettant de faire du provisionning de réseaux, (SDN, je ne sais ps), notammanet des réseaux entre machine svirutalbox:
+
+```
+
+DevOps-friendly
+
+Declarative specs and safe upgrades make NixOS a great system for DevOps use. 
+NixOps, the NixOS cloud deployment tool, allows you to provision and manage networks of 
+NixOS machines in environments like Amazon EC2 and VirtualBox.
+ 
+``` 
+
+[Page accueil Site Oueb Officiel NixOS](https://github.com/NixOS/nixpkgs/issues/32453)
+
