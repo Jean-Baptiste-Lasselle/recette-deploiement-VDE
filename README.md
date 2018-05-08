@@ -407,6 +407,7 @@ La question est de vérifier s'il le font au niveau de la couche L2 avec la viru
 ![Page accueil Site Oueb Officiel NixOS](https://github.com/Jean-Baptiste-Lasselle/recette-deploiement-VDE/raw/master/doc/impr/NixOS/page-accueil-site-oueb-NixOS.png)
 
 
+
 Renzo Davoli, le professeur de l'université de bologne, créateur auteur de VDE, est en train (a peut -être déjà terminé/amené à maturité), de 
 créer le successeur de VDE: VXVDE.
 
@@ -426,4 +427,57 @@ Underlay / Overlay networks avec Openstack + OpenDaylight
 Voir si je peux faire du opendaylight avec kubernetes, et sans aucune machine virtuelle, juste le provider de conteneur OCI.
 
 
+## Question to Professor Davoli
 
+Hello Professor Davoli, thank you very much for reading this paragrpah, which is meant to ask you a question 
+I hope in a proper format, and easy to read format.
+
+I am working on being able to provision a network (whatever its technical natiure is), which:
+* would have virutalbox Virtual Machines as bnetwork hosts on different physical virtualbox hosts.
+* I have found out about your solution, `VDE` mentionned in official [VirutalBox "Networking guide"]()
+* network will provide Layer 2 separation: what I want to do have, is a network isolated enough from the other, so that I can PXE boot machines broadcasting their UUID/MAC ADRESSES on Power ON, without
+  interfering at all with any other network hosts. By "without interfering at all with any other network hosts", I mean for example, taht the DHCP server I spawn to realize PXE booting, will not even act as a simple DHCP server for any network host in a different network.
+  
+As you can see below, I have conducted a series of tests, to test VDE switchesday-to-day use.
+
+One of my concerns, was to be able to exécute VDE commands from a text file (a script).
+
+While searching on the problem, I found [one issue in NixOS official and public issue management](https://github.com/NixOS/nixpkgs/issues/32453) :
+![entrée issue management NixOS](https://github.com/Jean-Baptiste-Lasselle/recette-deploiement-VDE/raw/master/doc/impr/NixOS/issue-github-NixOS-enchercahnt-solution-executer-script-VDE.png)
+
+Then I found a bit more about NixOS, and happenend to read:
+
+
+```
+
+DevOps-friendly
+
+[...]
+ 
+NixOps, the NixOS cloud deployment tool, allows you to provision and manage networks of 
+NixOS machines in environments like Amazon EC2 and VirtualBox.
+ 
+``` 
+
+Here are 4 accurate questions:
+
+* Do you confirm NixOS would allow to provision L2 isolated networks of WirtualBox VMs?
+* I heard you are working on `VXVDE`, as a replacement for `VDE`. This work of yours is going towards VXLANs, very much like in many other IAAS virtualisation projects (VXLANs everywhere in Openstack / Opendaylight / Kubernetes / FlannelD...), am I right?
+* Can I today use VXVDE to provision VXLAN networks between network hosts that are virtualbox VMs, on different hardware host? If yes, any link to a tutorial?
+* Did you know about your VDE being distributed with that Linux distribution's releases, namely `NixOS`?
+
+
+Thank you very much in advance, and thank you very much for your work,
+
+
+Best Regards,
+
+Jean-Baptiste Lasselle
+
+
+P.S.:
+
+Maybe a word about what I am here doing:
+
+I have recently found a very interesting and valuable business use case for those kind of hybrid virtualization paradigms concepts you're working on, I will 
+be glad to keep you informed on the matter.
