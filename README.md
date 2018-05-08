@@ -253,7 +253,7 @@ On fait juste du compute à cet endroit, et les résultats partent là où ils  
 
 ### Exemple: Accès réseau et SGF avec Ubuntu 100%en RAM
 
-à l'installation d'un ubuntu "desktop", on a deux options, "install Ubuntu", ou "Try Ubunutu". CEtte deuxième option permet d'exécuter Ubuntu à 100% dans la RAM, en utilsiant un utilisateur spécifique, dit "guest".
+à l'installation d'un ubuntu "desktop", on a deux options, "install Ubuntu", ou "Try Ubunutu". Cette deuxième option permet d'exécuter Ubuntu à 100% dans la RAM, en utilsiant un utilisateur spécifique, dit "guest".
 Dans ce mode, et avec cet utilisateur, il n'est pas possible d'apporter le moindre changement au SGF dans la RAM.
 Mais dans ce mode, on peut sans aucun problème accéder à Internet avec Mozilla:
 Donc cette instance de mozilla (à vérifier) , modifie bel et bien le SGF en RAM:
