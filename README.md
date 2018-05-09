@@ -508,3 +508,5 @@ Screenshots of a Renzo Davoli Conference about VDE/VXDE - 2017:
 
 ![Screenshot of a Renzo Davoli Conference about VDE - 2017](https://github.com/Jean-Baptiste-Lasselle/recette-deploiement-VDE/raw/master/doc/impr/conference-renzo-davoli-vde-vxvde-vdeplug.png)
 ![Screenshot of a Renzo Davoli Conference about VDE - 2017](https://github.com/Jean-Baptiste-Lasselle/recette-deploiement-VDE/raw/master/doc/impr/conference-renzo-davoli-vde-vxvde-vdeplug-2.png)
+
+[And the video file of the whole conferenced I here saved](https://github.com/Jean-Baptiste-Lasselle/recette-deploiement-VDE/raw/master/doc/video/modular%20VDEplug%20switchless%20switching%20networks%20(and%20libslirp).mp4)
