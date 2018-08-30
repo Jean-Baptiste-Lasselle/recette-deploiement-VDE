@@ -7,10 +7,10 @@
 .vinse {transition-timing-function: ease;}
 .vinse {transition-timing-function: ease-in;}
 .vinse {transition-timing-function: ease-out;}
-.vinse {transition-timing-function: ease-in-out;}
+.vinse {}
   </style>
 ---
-<div class="vinse">
+<div  style="color:blue;transition-timing-function: ease-in-out;width:150px;height:100px">
   
   petit truc  petit truc  petit truc  petit truc  petit truc  petit truc  petit truc 
 </div>
