@@ -4,10 +4,10 @@
 </p>
 
 ---
-<p   style="background-color:blue;transition-timing-function: ease-in-out;width:150px;height:100px">
+<div   style="background-color:blue;transition-timing-function: ease-in-out;width:150px;height:100px">
   
   petit truc  petit truc  petit truc  petit truc  petit truc  petit truc  petit truc 
-</p>
+</div>
 <p align="center">
   <a href="https://strapi.io">
     <img src="https://blog.strapi.io/content/images/2017/10/logo.png" width="318px" alt="Strapi logo" />
