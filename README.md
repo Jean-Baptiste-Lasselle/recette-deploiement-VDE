@@ -1,8 +1,6 @@
 
 # recette-deploiement-VDE
 
-#### OK VIese?
-
 Une recette de déploiement de VDE dans une VM centos 7 VirtualBox
 
 # Utilisation de la recette
