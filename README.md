@@ -3,9 +3,9 @@
   <a href="https://strapi.io/company#looking-for-talents">Join us</a>!
 </p>
 <script>
-function methode(){
-  alert("Bjr Vinsee:) !!");
-  }
+function myFunction() {
+    document.getElementById("demo").innerHTML = "Paragraph changed.";
+}
 </script>
 ---
 
