@@ -2,18 +2,12 @@
   <strong>We're hiring!</strong> Located in Paris 🇫🇷 and dreaming of being full-time on Strapi?
   <a href="https://strapi.io/company#looking-for-talents">Join us</a>!
 </p>
-<style>
-.vinse {transition-timing-function: linear;}
-.vinse {transition-timing-function: ease;}
-.vinse {transition-timing-function: ease-in;}
-.vinse {transition-timing-function: ease-out;}
-.vinse {}
-  </style>
+
 ---
-<div  style="color:blue;transition-timing-function: ease-in-out;width:150px;height:100px">
+<p   style="background-color:blue;transition-timing-function: ease-in-out;width:150px;height:100px">
   
   petit truc  petit truc  petit truc  petit truc  petit truc  petit truc  petit truc 
-</div>
+</p>
 <p align="center">
   <a href="https://strapi.io">
     <img src="https://blog.strapi.io/content/images/2017/10/logo.png" width="318px" alt="Strapi logo" />
